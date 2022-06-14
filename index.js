@@ -59,6 +59,8 @@ function writeToFile(input) {
     const title = `# ${input.title}
 ##Table of Contents 
 [Description](#description)
+## License
+${input.license}
 [Licenses](#licenses)
 [Installation](#installation)
 [Usage](#usage)
@@ -71,8 +73,6 @@ ${input.description}
 ${input.installation}
 ## Usage
 ${input.usage}
-## License
-${input.license}
 ## Contributing
 ${input.contributions}
 ## Testing
@@ -80,7 +80,7 @@ ${input.test}
 ## Questions 
 ${input.github}
 ${input.email}`
-console.log(title);
+    console.log(title);
 
 }
 
