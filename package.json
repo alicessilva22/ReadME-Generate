@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alicessilva22/ReadME-Generate/issues"
   },
-  "homepage": "https://github.com/alicessilva22/ReadME-Generate#readme"
+  "homepage": "https://github.com/alicessilva22/ReadME-Generate#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
