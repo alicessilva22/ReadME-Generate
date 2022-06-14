@@ -22,7 +22,7 @@ const questions = [
     },
     {
         type: 'input',
-        message:'How is your project installed?',
+        message: 'How is your project installed?',
         name: 'installation'
     },
     {
@@ -32,7 +32,7 @@ const questions = [
     },
     {
         type: 'input',
-        message:'Who collaborated in your project?',
+        message: 'Who collaborated in your project?',
         name: 'credits'
     },
     {
@@ -52,10 +52,42 @@ const questions = [
     },
 ];
 
-inquirer.prompt(questions).then((answers) => {
-    console.log(answers);
-  });
 
-// TODO: Create a function to write README file
 
-// TODO: Create a function to initialize app
+// Create a function to write README file
+function writeToFile(input) {
+    const title = `# ${input.title}
+##Table of Contents 
+[Description](#description)
+[License](#license)
+[Installation](#installation)
+[Usage](#usage)
+[Contributing](#contributing)
+[Testing](#testing)
+[Questions](#questions)
+## Description 
+${input.description}
+## Installation 
+${input.installation}
+## Usage
+${input.usage}
+## License
+${input.license}
+## Contributing
+${input.contributions}
+## Testing
+${input.test}
+## Questions 
+${input.github}
+${input.email}`
+console.log(title);
+
+}
+
+// Create a function to initialize app
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile(answers);
+    });
+}
+init();
