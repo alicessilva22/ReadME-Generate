@@ -18,7 +18,7 @@ const questions = [
     {
         type: 'input',
         message: 'What are your application\'s licenses?',
-        name: 'badges',
+        name: 'licenses',
     },
     {
         type: 'input',
@@ -43,7 +43,7 @@ const questions = [
     {
         type: 'input',
         message: 'What is your GitHub username',
-        name: 'github username',
+        name: 'github',
     },
     {
         type: 'input',
@@ -59,11 +59,11 @@ function writeToFile(input) {
     const title = `# ${input.title}
 ##Table of Contents 
 [Description](#description)
-[License](#license)
+[Licenses](#licenses)
 [Installation](#installation)
 [Usage](#usage)
-[Contributing](#contributing)
-[Testing](#testing)
+[Credits](#credits)
+[Tests](#tests)
 [Questions](#questions)
 ## Description 
 ${input.description}

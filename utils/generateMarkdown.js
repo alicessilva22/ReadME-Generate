@@ -16,7 +16,17 @@ function renderLicenseSection(license) { }
 // }
 
 const fs = require('fs');
-const generateMarkdown = 
+const generateMarkdown = ({
+    title,
+    description,
+    licenses,
+    installation,
+    usage,
+    credits,
+    tests,
+    github,
+    email
+}) => console.log('GENERATING MARKDOWN';)
 fs.writeFileSync('./output/README.md')
 
 module.exports = {
