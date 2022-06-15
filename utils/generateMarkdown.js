@@ -1,19 +1,18 @@
 // Create a function that returns a license badge based on which license is passed in 
 // If there is no license, return an empty string
-const renderLicenseBadge = (type) => {
+const renderLicenseBadge = (license) => {
     let color;
-    if (type === "MPL") color = "success";
-    if (type === "MPL") color = "yellow";
-    if (type === "MPL") color = "red";
-    if (type === "GPL") color = "lightgrey";
-    if (type === "Apache") color = "blueviolet";
-    if (type === "MIT") color = "blue";
-    if (type === "CC") color = "orange";
+    if (license === "GPL") color = "success";
+    if (license === "AGPL") color = "yellow";
+    if (license === "Apache") color = "red";
+    if (license === "MIT") color = "lightgrey";
+    if (license === "Mozilla") color = "blueviolet";
+    if (license === "LGPL") color = "blue";
+    if (license === "EPL") color = "orange";
 
     return (
-        `      
-        [![License: ${type}](https://img.shields.io/badge/License-${type}-${color}.svg)](https://opensource.org/licenses/AFL-3.0)
-        `
+    `[![License: ${license}](https://img.shields.io/badge/License-${license}-${color}.svg)](https://opensource.org/licenses/${license})
+    `
     );
 };
 
