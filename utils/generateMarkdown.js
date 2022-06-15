@@ -1,17 +1,17 @@
 // Create a function that returns a license badge based on which license is passed in 
 // If there is no license, return an empty string
-const renderLicenseBadge = (license) => {
+const renderLicenseBadge = (item) => {
     let color;
-    if (license === "GPL") color = "success";
-    if (license === "AGPL") color = "yellow";
-    if (license === "Apache") color = "red";
-    if (license === "MIT") color = "lightgrey";
-    if (license === "Mozilla") color = "blueviolet";
-    if (license === "LGPL") color = "blue";
-    if (license === "EPL") color = "orange";
+    if (item === "GPL") color = "success";
+    if (item === "AGPL") color = "yellow";
+    if (item === "Apache") color = "red";
+    if (item === "MIT") color = "lightgrey";
+    if (item === "Mozilla") color = "blueviolet";
+    if (item === "LGPL") color = "blue";
+    if (item === "EPL") color = "orange";
 
     return (
-    `[![License: ${license}](https://img.shields.io/badge/License-${license}-${color}.svg)](https://opensource.org/licenses/${license})
+    `[![License: ${item}](https://img.shields.io/badge/License-${item}-${color}.svg)](https://opensource.org/licenses/${item})
     `
     );
 };
@@ -76,7 +76,7 @@ ${tests}
 
 ## Questions?
 [GitHub](https://github.com/${github})  
-[Email] (mailto:${email})`
+[Email](mailto:${email})`
     );
 
     fs.writeFileSync('./output/README.md', template);

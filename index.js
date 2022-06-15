@@ -16,9 +16,9 @@ const questions = [
         name: 'description',
     },
     {
-        type: 'list',
+        type: 'rawlist',
         message: 'What are your application\'s licenses?',
-        name: 'licenses',
+        name: 'license',
         choices: ["GPL", "AGPL", "Apache", "MIT", "Mozilla", "LGPL", "EPL"]
     },
     {
