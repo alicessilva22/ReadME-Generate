@@ -1,4 +1,4 @@
-# f
+# s
 
 ## Table of Contents 
 * [License](#license)
@@ -10,27 +10,27 @@
 * [Questions?](#questions)
 
 ## Badges
-[![License: Apache](https://img.shields.io/badge/License-Apache-red.svg)](https://opensource.org/licenses/Apache)
+[![License: BSD-2-Clause](https://img.shields.io/badge/License-BSD-2-Clause-undefined.svg)]
     
 
 ## License
-[Apache](https://opensource.org/licenses/Apache)
+[BSD-2-Clause](https://opensource.org/licenses/BSD-2-Clause)
 
 ## Description
-as
+w
 
 ## Installation
-df
+f
 
 ## Usage
-df
+e
 
 ## Credits
-df
+s
 
 ## Tests
-df
+f
 
 ## Questions?
-[GitHub](https://github.com/df)  
-[Email](mailto:h)
+[GitHub](https://github.com/v)  
+[Email](mailto:f)

@@ -2,16 +2,14 @@
 // If there is no license, return an empty string
 const renderLicenseBadge = (item) => {
     let color;
-    if (item === "GPL") color = "success";
-    if (item === "AGPL") color = "yellow";
-    if (item === "Apache") color = "red";
-    if (item === "MIT") color = "lightgrey";
-    if (item === "Mozilla") color = "blueviolet";
-    if (item === "LGPL") color = "blue";
-    if (item === "EPL") color = "orange";
+    if (item === "BSD-2-Clause") color = "yellow";
+    if (item === "gpl-license") color = "lightgrey";
+    if (item === "lgpl-license") color = "blueviolet";
+    if (item === "MIT") color = "blue";
+    if (item === "MPL-2.0") color = "orange";
 
     return (
-    `[![License: ${item}](https://img.shields.io/badge/License-${item}-${color}.svg)](https://opensource.org/licenses/${item})
+    `[![License: ${item}](https://img.shields.io/badge/License-${item}-${color}.svg)]
     `
     );
 };
@@ -20,6 +18,7 @@ const renderLicenseBadge = (item) => {
 // Create a function that returns a license link
 // If there is no license, return an empty string
 const renderLicenseLink = (license) => {
+    `(https://opensource.org/licenses/${license})`
 
 }
 
